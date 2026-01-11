@@ -2,49 +2,49 @@
 
 This is my Devscale Bootcamp Assignment 2. I built a simple EventMaker API using Hono + Prisma and pnpm.
 
-Repository
-- https://github.com/hisyamakbar/hisyamakbar-devscale-assignment-2.git
+Repository  
+https://github.com/hisyamakbar/hisyamakbar-devscale-assignment-2.git
 
-Tech
+## Tech
 - Hono (HTTP framework)  
 - Prisma (ORM)  
 - pnpm (package manager)  
 - SQLite
 
-Quick setup
+## Quick setup
 ```bash
 git clone https://github.com/hisyamakbar/hisyamakbar-devscale-assignment-2.git
 cd hisyamakbar-devscale-assignment-2
 pnpm install
 ```
 
-Environment
+## Environment
 Create a `.env` file:
 ```env
 DATABASE_URL="file:./dev.db"
 ```
 
-Prisma (generate & migrate)
+## Prisma (generate & migrate)
 ```bash
 pnpm prisma generate
 pnpm prisma migrate dev --name init
 ```
 
-Run (development)
+## Run (development)
 ```bash
 pnpm dev
 # or
 pnpm run dev
 ```
 
-Build & Start (production)
+## Build & Start (production)
 ```bash
 pnpm build
 pnpm start
 ```
 
-API (examples)
-- GET  /events      — list events  
+## API (examples)
+- GET  /events      — list events
 
-License
+## License
 MIT
